@@ -1,0 +1,421 @@
+.admission-form-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #111827;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.form-hero {
+  min-height: 360px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 8%;
+
+  background:
+    linear-gradient(
+      rgba(15, 23, 42, 0.76),
+      rgba(15, 23, 42, 0.76)
+    ),
+    url('/school-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+}
+
+.form-hero-content {
+  max-width: 800px;
+}
+
+.form-hero-content p {
+  margin-bottom: 15px;
+
+  color: #bfdbfe;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.form-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.1;
+}
+
+.form-hero-content span {
+  display: block;
+
+  max-width: 650px;
+  margin-top: 20px;
+
+  color: #e5e7eb;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+  padding: 80px 8%;
+}
+
+.admission-form {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+  margin-bottom: 25px;
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.04);
+}
+
+.form-card-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 30px;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.form-card-heading > span {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-weight: 700;
+}
+
+.form-card-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 24px;
+}
+
+.form-card-heading p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.form-group label,
+.upload-group label {
+  margin-bottom: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group label span,
+.upload-group label span {
+  color: #dc2626;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================
+   UPLOAD
+========================= */
+
+.upload-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.upload-group {
+  padding: 22px;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+
+  background: #f8fafc;
+}
+
+.upload-group input {
+  width: 100%;
+
+  margin-top: 5px;
+
+  font-size: 13px;
+}
+
+.upload-group small {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #9ca3af;
+}
+
+
+/* =========================
+   DECLARATION
+========================= */
+
+.declaration-card {
+  background: #f8fafc;
+}
+
+.checkbox-label {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+
+  margin-top: 3px;
+
+  flex-shrink: 0;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.submit-area {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 10px 0 40px;
+}
+
+.submit-area p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.submit-button {
+  padding: 15px 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #1e3a8a;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background: #172554;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+  .form-section {
+    padding: 60px 20px;
+  }
+
+  .form-grid,
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 28px 22px;
+  }
+
+  .submit-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .form-hero {
+    min-height: 400px;
+    padding: 60px 20px;
+  }
+
+  .form-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .form-hero-content span {
+    font-size: 16px;
+  }
+
+  .form-card-heading {
+    align-items: flex-start;
+  }
+
+  .form-card-heading h2 {
+    font-size: 20px;
+  }
+
+  .form-card-heading p {
+    line-height: 1.5;
+  }
+
+  .upload-group {
+    padding: 18px;
+  }
+}

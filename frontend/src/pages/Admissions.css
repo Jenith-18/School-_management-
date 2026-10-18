@@ -1,0 +1,1043 @@
+/* =========================================================
+   ADMISSIONS PAGE
+========================================================= */
+
+.admissions-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #111827;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.admissions-hero {
+  min-height: 680px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 8%;
+
+  background:
+    linear-gradient(
+      rgba(15, 23, 42, 0.68),
+      rgba(15, 23, 42, 0.68)
+    ),
+    url('/admissionimg.png');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.admissions-hero-content {
+  position: relative;
+  z-index: 1;
+
+  max-width: 850px;
+
+  color: #ffffff;
+}
+
+.admissions-hero .hero-label {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  color: #bfdbfe;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.admissions-hero h1 {
+  margin: 0;
+
+  font-size: clamp(45px, 6vw, 76px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.admissions-hero p {
+  max-width: 680px;
+
+  margin: 28px 0 0;
+
+  color: #e5e7eb;
+
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+
+/* Hero Buttons */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 38px;
+
+  flex-wrap: wrap;
+}
+
+.apply-button,
+.admission-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 25px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.apply-button {
+  background: #ffffff;
+  color: #1e3a8a;
+}
+
+.apply-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.admission-outline-button {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.admission-outline-button:hover {
+  background: #ffffff;
+  color: #1e3a8a;
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.admission-overview,
+.process-section,
+.documents-section,
+.fee-section {
+  padding: 105px 8%;
+}
+
+.section-heading {
+  max-width: 800px;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.section-heading h2,
+.eligibility-content h2,
+.parent-support-content h2 {
+  margin: 0 0 20px;
+
+  color: #111827;
+
+  font-size: clamp(32px, 4vw, 50px);
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+}
+
+.section-heading p {
+  margin: 0 0 16px;
+
+  color: #6b7280;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.center-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.center-heading p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   ADMISSION OVERVIEW
+========================================================= */
+
+.admission-overview {
+  background: #ffffff;
+}
+
+.admission-overview .section-heading {
+  max-width: 850px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.admission-overview .section-heading p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process-section {
+  background: #f8fafc;
+}
+
+.process-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 18px;
+}
+
+.process-card {
+  position: relative;
+
+  padding: 30px 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+
+  transition: 0.25s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.10);
+}
+
+.process-card > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 25px;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.process-card h3 {
+  margin: 0 0 12px;
+
+  color: #111827;
+
+  font-size: 20px;
+}
+
+.process-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ELIGIBILITY
+========================================================= */
+
+.eligibility-section {
+  padding: 105px 8%;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+  align-items: center;
+
+  background: #ffffff;
+}
+
+.eligibility-content {
+  max-width: 620px;
+}
+
+.eligibility-content p {
+  color: #6b7280;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.eligibility-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.eligibility-card > div {
+  padding: 28px 22px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  transition: 0.25s ease;
+}
+
+.eligibility-card > div:hover {
+  transform: translateY(-5px);
+
+  background: #ffffff;
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.eligibility-card span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 30px;
+}
+
+.eligibility-card strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #111827;
+
+  font-size: 17px;
+}
+
+.eligibility-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   DOCUMENTS
+========================================================= */
+
+.documents-section {
+  background: #f8fafc;
+}
+
+.documents-grid {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+.document-card {
+  padding: 32px 26px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  transition: 0.25s ease;
+}
+
+.document-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.document-card > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 22px;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  font-size: 25px;
+}
+
+.document-card h3 {
+  margin: 0 0 10px;
+
+  color: #111827;
+
+  font-size: 19px;
+}
+
+.document-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   FEE SECTION
+========================================================= */
+
+.fee-section {
+  background: #ffffff;
+}
+
+.fee-info {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.fee-info > div {
+  padding: 35px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  transition: 0.25s ease;
+}
+
+.fee-info > div:hover {
+  transform: translateY(-6px);
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.fee-info span {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 32px;
+}
+
+.fee-info h3 {
+  margin: 0 0 12px;
+
+  color: #111827;
+
+  font-size: 20px;
+}
+
+.fee-info p {
+  margin: 0;
+
+  color: #6b7280;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PARENT SUPPORT
+========================================================= */
+
+.parent-support {
+  margin: 0 8% 90px;
+
+  padding: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #f8fafc
+    );
+
+  border: 1px solid #dbeafe;
+}
+
+.parent-support-content {
+  max-width: 700px;
+}
+
+.parent-support-content h2 {
+  margin-bottom: 15px;
+}
+
+.parent-support-content p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.support-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  padding: 0 23px;
+
+  border-radius: 8px;
+
+  background: #1e3a8a;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.support-button:hover {
+  transform: translateY(-3px);
+
+  background: #172554;
+
+  box-shadow: 0 12px 25px rgba(30, 58, 138, 0.20);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.apply-section {
+  margin: 0 8% 100px;
+
+  padding: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  border-radius: 22px;
+
+  background: #1e3a8a;
+
+  color: #ffffff;
+}
+
+.apply-section > div {
+  max-width: 760px;
+}
+
+.apply-section > div > span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #bfdbfe;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.apply-section h2 {
+  margin: 0 0 15px;
+
+  font-size: clamp(30px, 4vw, 45px);
+
+  line-height: 1.2;
+}
+
+.apply-section p {
+  margin: 0;
+
+  color: #dbeafe;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.apply-cta-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 25px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #1e3a8a;
+
+  text-decoration: none;
+
+  font-weight: 800;
+
+  transition: 0.25s ease;
+}
+
+.apply-cta-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .documents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .eligibility-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .admissions-hero {
+    min-height: 600px;
+
+    padding: 90px 6%;
+  }
+
+  .admission-overview,
+  .process-section,
+  .documents-section,
+  .fee-section,
+  .eligibility-section {
+    padding: 80px 6%;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fee-info {
+    grid-template-columns: 1fr;
+  }
+
+  .parent-support {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .apply-section {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  /* Hero */
+
+  .admissions-hero {
+    min-height: 650px;
+
+    padding: 70px 20px;
+
+    background-position: center;
+  }
+
+  .admissions-hero .hero-label {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+  }
+
+  .admissions-hero h1 {
+    font-size: 43px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .admissions-hero p {
+    margin-top: 22px;
+
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-top: 30px;
+  }
+
+  .apply-button,
+  .admission-outline-button {
+    width: 100%;
+  }
+
+
+  /* Sections */
+
+  .admission-overview,
+  .process-section,
+  .documents-section,
+  .fee-section,
+  .eligibility-section {
+    padding: 70px 20px;
+  }
+
+  .section-heading h2,
+  .eligibility-content h2,
+  .parent-support-content h2 {
+    font-size: 32px;
+  }
+
+  .section-heading p {
+    font-size: 16px;
+  }
+
+
+  /* Process */
+
+  .process-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .center-heading {
+    margin-bottom: 35px;
+  }
+
+  .process-card {
+    padding: 26px 22px;
+  }
+
+
+  /* Eligibility */
+
+  .eligibility-card {
+    grid-template-columns: 1fr;
+  }
+
+  .eligibility-card > div {
+    padding: 25px;
+  }
+
+
+  /* Documents */
+
+  .documents-grid {
+    grid-template-columns: 1fr;
+
+    margin-top: 35px;
+  }
+
+  .document-card {
+    padding: 28px 24px;
+  }
+
+
+  /* Fee */
+
+  .fee-info {
+    grid-template-columns: 1fr;
+
+    margin-top: 35px;
+  }
+
+  .fee-info > div {
+    padding: 28px;
+  }
+
+
+  /* Parent Support */
+
+  .parent-support {
+    margin: 0 20px 60px;
+
+    padding: 35px 25px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 25px;
+  }
+
+  .support-button {
+    width: 100%;
+  }
+
+
+  /* Final CTA */
+
+  .apply-section {
+    margin: 0 20px 70px;
+
+    padding: 35px 25px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 28px;
+  }
+
+  .apply-section h2 {
+    font-size: 32px;
+  }
+
+  .apply-cta-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .admissions-hero h1 {
+    font-size: 37px;
+  }
+
+  .section-heading h2,
+  .eligibility-content h2,
+  .parent-support-content h2 {
+    font-size: 29px;
+  }
+
+  .apply-section h2 {
+    font-size: 29px;
+  }
+
+}
+/* =========================================================
+   DETAILED FEE TABLE
+========================================================= */
+
+.fee-table {
+  width: 100%;
+  margin-top: 50px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.fee-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  gap: 25px;
+
+  padding: 25px 30px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  align-items: center;
+}
+
+.fee-row:last-child {
+  border-bottom: none;
+}
+
+.fee-header {
+  background: #1e3a8a;
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+.fee-row > span:first-child {
+  color: #111827;
+  font-weight: 700;
+}
+
+.fee-header > span:first-child {
+  color: #ffffff;
+}
+
+.fee-row > span:nth-child(2) {
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+.fee-row strong {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.fee-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  margin-top: 25px;
+  padding: 20px 24px;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+}
+
+.fee-note span {
+  font-size: 20px;
+}
+
+.fee-note p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* Fee table mobile */
+
+@media (max-width: 700px) {
+
+  .fee-table {
+    margin-top: 35px;
+  }
+
+  .fee-row {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+
+    padding: 22px;
+  }
+
+  .fee-header {
+    display: none;
+  }
+
+  .fee-row > span:first-child {
+    font-size: 17px;
+  }
+
+  .fee-row > span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .fee-row strong {
+    margin-top: 5px;
+  }
+
+  .fee-note {
+    padding: 18px;
+  }
+
+}
